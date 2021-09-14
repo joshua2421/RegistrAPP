@@ -17,11 +17,11 @@
   
   <ion-item>
     <ion-label >Contraseña:</ion-label>
-    <ion-input type="password" placeholder="contraseña" #contraseña></ion-input>
+    <ion-input type="password" placeholder="contraseña" #contrasena></ion-input>
   </ion-item>
 
     <br><br>
-    <ion-button expand="block" shape="round" >
+    <ion-button (Click)= "Datos_alumno(nombre, contrasena)" expand="block" shape="round" >
       Ingresar
     </ion-button>
     <ion-text [routerLink]="['/restablecer-contrasena']" color="primary">
