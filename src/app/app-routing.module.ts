@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ingresar',
+    loadChildren: () => import('./ingresar/ingresar.module').then( m => m.IngresarPageModule)
+  },
 ];
 
 @NgModule({
