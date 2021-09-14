@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'ingresar',
     loadChildren: () => import('./ingresar/ingresar.module').then( m => m.IngresarPageModule)
+  },  {
+    path: 'restablecer-contrasena',
+    loadChildren: () => import('./restablecer-contrasena/restablecer-contrasena.module').then( m => m.RestablecerContrasenaPageModule)
   },
+
 ];
 
 @NgModule({
